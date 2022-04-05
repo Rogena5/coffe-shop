@@ -19,7 +19,7 @@
 
 html{
     height:100hv;
-font-size: 62.5%;
+    font-size: 62.5%;
 }
 
 body{
@@ -472,11 +472,30 @@ color: white;
 }
 
 @media (max-width:450px) {
-    html{
-        font-size: 50%; 
+    #menu-btn{
+        display:inline-block;
     }
+    .header .navbar{
+        position: absolute;
+        top:100%;
+        right:-100%;
+        background: white;
+        width: 20rem;
+        height: calc(100hv - 9.5rem);
     }
-
+    .header .navbar.active{
+        right: 0;
+    }
+    .header .navbar a{
+        color: var(--black);
+        display: block;
+        margin: 1.5rem;
+        padding: 10px;
+        font-size: 2rem;
+    }
+    .header .search-form{
+        width:90%;
+        right:2rem}}
 
 
 
